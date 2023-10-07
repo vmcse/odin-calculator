@@ -17,3 +17,23 @@ const operate = (x, operator, y) => {
       return "Invalid Operator";
   }
 };
+
+let buttons = document.querySelector(".buttons-grid").children;
+buttons = [...buttons];
+
+const display = document.querySelector(".display");
+display.textContent = "";
+
+buttons.forEach((button) => {
+  console.log(button);
+  if (button.className === "clear") {
+    button.addEventListener("click", (e) => {
+      display.textContent = "";
+    });
+  } else if (button.className == "equals") {
+  } else {
+    button.addEventListener("click", (e) => {
+      display.textContent += e.target.textContent;
+    });
+  }
+});
