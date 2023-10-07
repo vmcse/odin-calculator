@@ -1,0 +1,22 @@
+:root {
+  --body-bg: #212529;
+  --body-color: snow;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.calculator {
+  border: 2px solid;
+  height: 70vh;
+  width: 40vh;
+}
