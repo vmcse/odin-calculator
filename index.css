@@ -4,6 +4,8 @@
 }
 
 body {
+  min-width: 30%;
+  min-height: 30%;
   background-color: var(--body-bg);
   color: var(--body-color);
 }
@@ -33,16 +35,19 @@ body {
 }
 
 .buttons-grid {
+  padding: 20px;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .buttons-grid button {
-  height: 12vh;
+  height: 11vh;
   border: none;
   font-size: x-large;
+  overflow: hidden;
+  min-width: 0;
 }
 
 .digit,
