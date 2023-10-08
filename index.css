@@ -32,6 +32,12 @@ body {
   width: auto;
   height: 20vh;
   margin-bottom: 2px;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  padding: 2px;
+  font-size: xx-large;
+  font-weight: bold;
 }
 
 .buttons-grid {
@@ -44,29 +50,25 @@ body {
 
 .buttons-grid button {
   height: 11vh;
-  border: none;
   font-size: x-large;
   overflow: hidden;
   min-width: 0;
 }
 
-.digit,
-.operation,
-.clear {
-  background: black;
+.digit {
+  background-color: rgb(30, 30, 54);
 }
 
 .digit {
   color: aliceblue;
 }
 
-.operation,
-.clear {
-  color: orange;
+.operator,
+.clear,
+.equals {
+  background-color: orange;
 }
 
-.equals {
-  border-radius: 50%;
-  background-color: orange;
-  color: aliceblue;
+.operator:focus {
+  background-color: rgb(255, 201, 99);
 }
